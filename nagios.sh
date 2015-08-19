@@ -93,6 +93,7 @@ function add_service {
 				hostgroup_name $_hostgroupname \n\
 				check_command $_command$_commandargs \n}\n\n" >> $OPTION
 
+	service nagios3 reload
 	main_menu
 }
 
